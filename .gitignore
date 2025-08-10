@@ -1,0 +1,63 @@
+# === Java Build Files ===
+*.class
+*.jar
+*.war
+*.ear
+
+# === Maven ===
+/target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+*.iws
+out/
+
+# === Eclipse ===
+.project
+.classpath
+.settings/
+
+# === NetBeans ===
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# === VS Code ===
+.vscode/
+
+# === Logs and Reports ===
+*.log
+*.csv
+*.tsv
+*.dat
+*.out
+/test-output/
+surefire-reports/
+testng-results.xml
+
+# === Environment/Secrets ===
+.env
+.env.*
+*.key
+*.pem
+*.p12
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Git ===
+*.orig
+*.swp
+*.swo
+
+# === Coverage/Reports ===
+/jacoco.exec
+/coverage/
+**/cobertura.ser
