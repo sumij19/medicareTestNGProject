@@ -10,7 +10,7 @@ import pages.LoginPage;
 public class LoginTest extends BaseClassTest {
 
 	
-	@Test
+	@Test 
 	public void verifyLoginWithValidCredentials() throws InterruptedException {
 		
 		try {

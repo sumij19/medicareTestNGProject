@@ -30,11 +30,11 @@ public class ProductsPage extends BasePage {
 		//ProductsPage methods
 		public void clickAddToCartBtn(String productName) {
 			try {
-				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-				WebElement cartBtn =getProductCartBtn(productName);
-				cartBtn = wait.until(ExpectedConditions.elementToBeClickable(getProductCartBtn(productName)));
 				
-					getProductCartBtn(productName).click();
+				
+				WebElement cartBtn = getProductCartBtn(productName);		
+				waitUtil.waitForClickable(cartBtn).click();
+				
 			} catch (Exception e) {
 				
 				e.printStackTrace();

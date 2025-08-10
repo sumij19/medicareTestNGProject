@@ -5,7 +5,7 @@
     <classes>
     
       <!-- class name="tests.SignUpTest"/ -->
-      <!-- class name="tests.LoginTest"/ -->
+      <class name="tests.LoginTest"/>
       <class name="tests.AddToCartCheckoutTest"/>
       
      </classes>

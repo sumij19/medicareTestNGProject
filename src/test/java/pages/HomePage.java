@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BasePage;
+import utils.WaitUtil;
 
 public class HomePage extends BasePage {
 	
@@ -37,20 +38,7 @@ public class HomePage extends BasePage {
 	}
 	
 	public void clickProductsLink() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		ProductsLink = wait.until(ExpectedConditions.elementToBeClickable(ProductsLink));
-		ProductsLink.click();
-	}
-	
-	public boolean isDisplayedLogoutLink() {
-		try {
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	        LogoutLink = wait.until(ExpectedConditions.visibilityOfElementLocated((By) LogoutLink));
-	        return LogoutLink.isDisplayed();
-	    } catch (Exception e) {
-	        return false;
-	    }
-
+		waitUtil.waitForClickable(ProductsLink).click();
 	}
 	
 	public void clickLogoutLink() {
